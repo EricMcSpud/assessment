@@ -13,9 +13,10 @@ import java.util.List;
 @RequestMapping("account")
 public class AccountController {
 
+    private AccountService accountService;
+
     @Autowired
-    AccountService accountService;
-    void setAccountServiceImpl(AccountService accountService) {
+    void setAccountService(AccountService accountService) {
         this.accountService = accountService;
     }
 
